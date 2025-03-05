@@ -1,5 +1,4 @@
 Flask
 gunicorn
-sqlite3
 reportlab
 firebase-admin
