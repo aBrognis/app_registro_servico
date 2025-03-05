@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Serviço</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Adicionar Serviço</h1>
+    <form method="post">
+        <label for="ref">Referência:</label>
+        <input type="text" id="ref" name="ref" placeholder="Referência" required>
+        <br>
+        <label for="qtde">Quantidade:</label>
+        <input type="number" id="qtde" name="qtde" placeholder="Quantidade" required>
+        <br>
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" placeholder="Preço" required>
+        <br>
+        <label for="linha">Linha:</label>
+        <input type="text" id="linha" name="linha" placeholder="Linha" required>
+        <br>
+        <button type="submit" class="btn">Adicionar</button>
+        <a href="{{ url_for('combined') }}" class="btn">Voltar</a>
+    </form>
+</body>
+</html>
